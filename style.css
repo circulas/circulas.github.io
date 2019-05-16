@@ -7,11 +7,11 @@ ul {
     color:rgb(44, 44, 44);
     margin: 0;
     padding: 0;
-    max-width: 100%;
 }
 
 li{
     display: inline;
+    max-width: 60%;
 }
 
 .center{
