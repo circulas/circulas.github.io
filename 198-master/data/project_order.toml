@@ -4,5 +4,6 @@ content = [
     "/projects/electric-lady",
     "/projects/tightrope",
     "/projects/archandroid",
-    "/projects/metropolis", 
+    "/projects/metropolis",
+    "/projects/procedurally-generated-landscape", 
 ]
