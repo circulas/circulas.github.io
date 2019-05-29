@@ -7,8 +7,9 @@
 </head>
 <body>
     {{ partial "navbar.html" (dict "context" . "originPage" "project") }}
-    <div class="container">
-        <h1 class="text-center">{{ .Title }}</h1>
+    <div class="container my-5">
+        <h1 class="text-center transition2">{{ .Title }}</h1>
+        <br>
         
         {{/*  Each project has either a project image or a project video  */}}
         {{/*  The code below checks if there's a project video, and if so checks the type  */}}
@@ -32,38 +33,29 @@
         {{ else }}
             {{ if .Params.projectImage }}
                 {{ $img:= .Resources.GetMatch .Params.projectImage }}
-                    <div>
-                        <div class = "row" class = "container-fluid">
-                            <div class = "col-lg">
-                                <img src="{{ $img.RelPermalink }}" class = "container-fluid">
-                            </div>
-                            <div class = "col-lg">
-                                <img src="{{ $img.RelPermalink }}" class = "container-fluid">
-                            </div>
-                        </div>
-                        <div class = "row" class = "container-fluid">
-                            <div class = "col-lg">
-                                <img src="{{ $img.RelPermalink }}" class = "container-fluid">
-                            </div>
-                            <div class = "col-lg">
-                                <img src="{{ $img.RelPermalink }}" class = "container-fluid">
-                            </div>
-                        </div>
+                    <div class = "container-fluid transition1">
+                        <img src="{{ $img.RelPermalink }}" class = "container-fluid">
                     </div>
-                
             {{ else }}
                 <p>THERE IS NO PROJECT IMAGE OR PROJECT VIDEO ASSOCIATED WITH THIS PROJECT!!!</p>
                 <p>TODO: ADD A PROJECT IMAGE OR PROJECT VIDEO</p>
         {{ end }}
         {{ end }}
         
-        <h2 class = "container-fluid">
+        <h2>
             <br>
-            {{ .Content }}
+            <p>
+                <div class = "container-fluid text-center pt-2 pb-1 px-0 transition3" >
+                    {{ .Content }}
+                </div>
+            </p>
         </h2>
 
-        <h3 class = "text-center">
-            Embedded itch.io here
+        <h3>
+            <br>
+            <div class = "container-fluid mb-5 transition4" style = "width: 552; height:167">
+                <iframe class = "embed-responsive" frameborder="0" src="https://itch.io/embed/{{.Params.itch}}?border_width=0&amp;bg_color=adffcf&amp;link_color=118674" width="550" height="165"></iframe>
+            </div>
         </h3>    
         {{/*  You can add more images and videos in the content as well! 
             Do that in the .md file for the project  */}}

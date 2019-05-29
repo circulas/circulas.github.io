@@ -16,6 +16,8 @@
     projectVideoType = ""
     #Enter "youtube" or "vimeo". You can add other video types as well by editing single.html 
     projectImage = ""
+
+    itch = ""
     #Enter the filename only. For example, "metropolis_album.jpg" 
     #This image should be saved in the project folder with the name of your project 
     projectImageAltText = ""
