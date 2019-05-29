@@ -1,9 +1,3 @@
 content = [
-    "/projects/dirty-computer",
-    "/projects/yoga",
-    "/projects/electric-lady",
-    "/projects/tightrope",
-    "/projects/archandroid",
-    "/projects/metropolis",
     "/projects/procedurally-generated-landscape", 
 ]
