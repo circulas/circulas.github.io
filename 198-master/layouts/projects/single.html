@@ -6,7 +6,7 @@
     {{/*  the second argument is the context for variables in "head.html" and using "." means use the same variable namespace as this document  */}}
 </head>
 <body>
-    {{ partial "navbar.html" (dict "context" . "originPage" "project") }}
+    {{ partial "navbar.html" (dict "context" . "originPage" "home") }}
     <div class="container my-5">
         <h1 class="text-center transition2">{{ .Title }}</h1>
         <br>
@@ -45,7 +45,7 @@
         <h2>
             <br>
             <p>
-                <div class = "container-fluid text-center pt-2 pb-1 px-0 transition4" >
+                <div class = "container-fluid text-center pt-2 pb-1 px-0 transition4" style = "font-size: 1.5rem">
                     {{ .Content }}
                 </div>
             </p>
