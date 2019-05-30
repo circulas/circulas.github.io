@@ -34,24 +34,30 @@ a{
     animation-name: transitionAnimation1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .transition2{
     animation-name: transitionAnimation2;
     animation-duration: 1s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .transition3{
     animation-name: transitionAnimation3;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .transition4{
     animation-name: transitionAnimation4;
+    animation-delay: 1s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 @keyframes transitionAnimation1{

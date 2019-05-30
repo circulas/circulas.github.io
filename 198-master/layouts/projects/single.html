@@ -45,18 +45,20 @@
         <h2>
             <br>
             <p>
-                <div class = "container-fluid text-center pt-2 pb-1 px-0 transition3" >
+                <div class = "container-fluid text-center pt-2 pb-1 px-0 transition4" >
                     {{ .Content }}
                 </div>
             </p>
         </h2>
 
+        {{if .Params.itch}}
         <h3>
             <br>
-            <div class = "container-fluid mb-5 transition4" style = "width: 552; height:167">
+            <div class = "container-fluid mb-5 transition3" style = "width: 552; height:167">
                 <iframe class = "embed-responsive" frameborder="0" src="https://itch.io/embed/{{.Params.itch}}?border_width=0&amp;bg_color=adffcf&amp;link_color=118674" width="550" height="165"></iframe>
             </div>
-        </h3>    
+        </h3>
+        {{end}}    
         {{/*  You can add more images and videos in the content as well! 
             Do that in the .md file for the project  */}}
      
