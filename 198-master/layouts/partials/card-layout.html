@@ -7,9 +7,9 @@
         {{ end }}
         {{ with $.Site.GetPage $proj }}
         {{ $img:= .Resources.GetMatch .Params.projectImage }}
-        {{ $imgThumb := $img.Fill "400x400" }}
+        {{ $imgThumb := $img.Fill "1920x1080" }}
         {{/*  Resizes and crops the project image to 400 X 400 so that we get a perfect square which loads quickly  */}}
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <div class="card h-100 border-0 pt-5 pr-4">
                 <img src="{{ $imgThumb.RelPermalink }}" class="card-img-top transition1" alt="...">
                 <div class="card-body backgroundFade">
