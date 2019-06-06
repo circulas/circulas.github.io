@@ -7,7 +7,7 @@
         {{ end }}
         {{ with $.Site.GetPage $proj }}
         {{ $img:= .Resources.GetMatch .Params.projectImage }}
-        {{ $imgThumb := $img.Fill "1920x1080" }}
+        {{ $imgThumb := $img.Fill "711x400" }}
         {{/*  Resizes and crops the project image to 400 X 400 so that we get a perfect square which loads quickly  */}}
         <div class="col-md-4">
             <div class="card h-100 border-0 pt-5 pr-4">
